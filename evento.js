@@ -1,15 +1,10 @@
-const anoAtual = 2022
-const mesAtual = 6
-const diaAtual = 15
-let anoEvento = 2022
-let mesEvento = 7
-let diaEvento = 17
+let dataAtual = new Date("2022-06-15")
+let dataEvento = new Date("2022-07-16")
 let idadeParticipante = 16
 listaParticipantes = ["Ana","Icaro", "João"]
-permitirCadastro = listaParticipantes.length < 100
 
-while(permitirCadastro){
-if(anoEvento >= anoAtual && mesEvento > mesAtual && diaEvento > diaAtual){
+while(listaParticipantes.length < 100){
+if(dataEvento > dataAtual){
 
 console.log("A data é válida para cadastro, pode prosseguir")
 
